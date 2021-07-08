@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 export default function CharacterCard(props) {
     const [active, setActive] = useState(false);
     const activate = () => {
@@ -7,7 +7,9 @@ export default function CharacterCard(props) {
             props.activationHandler(props.value)
         }
     }
-
+    useEffect(){
+        
+    }
     const className = `card ${active ? 'activeCard' : ''}`
     return (
         <div className={className} onClick={activate}>{props.value}</div>
