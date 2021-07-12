@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CharacterCard from './CharacterCard';
-import _, { attempt } from 'lodash';
+import _ from 'lodash';
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
     let chars = _.shuffle(Array.from(word))
@@ -20,8 +20,8 @@ export default function WordCard(props) {
         let guess = state.guess + c
         setState({ ...state, guess })
 
-        if (guess.length == state.word.length) {
-            if (guess == state.word) {
+        if (guess.length === state.word.length) {
+            if (guess === state.word) {
                 console.log('yeah!')
                 setState({ ...state, guess: '', completed: true })
             } else {
