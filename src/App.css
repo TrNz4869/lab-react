@@ -51,8 +51,6 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
-
-
  }
  
  .activeCard {
@@ -96,3 +94,22 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   font-size: 16px;
 }
+
+.frame {
+  background-color: #b3fdb0;
+  margin-top:10px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:10px;
+  border-radius: 10px;
+ }
+
+ .frame-2 {
+  background-color: #fdf5b0;
+  margin-top:10px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:10px;
+  border-radius: 10px;
+ }
+ 
