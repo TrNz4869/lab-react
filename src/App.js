@@ -4,6 +4,9 @@ import WordCard from './WordCard';
 function App() {
   const [data,setData]=useState(null)
   const [print,setPrint]=useState(false)
+  const restartGame = ()=>{
+    window.location.reload();
+  }
   
   function getData(val)
   {
@@ -15,12 +18,13 @@ function App() {
   return (
     <div className="App">
     <input type="text" placeholder="Type your word here!" onChange={getData}/>&nbsp;&nbsp;
-    <button class="button" onClick={()=>setPrint(true)}>Enter</button>
+    <button className="button" onClick={()=>setPrint(true)}>Enter</button>&nbsp;&nbsp;
     {
        print?
        <WordCard value={data}/>
        :null 
     }
+    <button className="button-2" onClick={restartGame}>Restart</button>
 
     </div>
   );
