@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align:center;
+  vertical-align:middle;
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -38,16 +39,45 @@
 }
 
 .card {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  border-radius: 25px;
   width: 3em;
-  font-size: 2em;
+  height: 4em;
+  font-size: 1em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
+
+
  }
  
  .activeCard {
-  color: red;
-  background: pink;
+  color: rgb(5, 54, 7);
+  background: rgb(69, 240, 98);
  }
+
+
+ input[type=text] {
+  padding: 5px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 16px;
+}

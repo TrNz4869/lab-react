@@ -11,19 +11,20 @@ function App() {
     setData(val.target.value)
     setPrint(false)
   }
+
   return (
     <div className="App">
-     {
+    <input type="text" placeholder="Type your word here!" onChange={getData}/>&nbsp;&nbsp;
+    <button class="button" onClick={()=>setPrint(true)}>Enter</button>
+    {
        print?
        <WordCard value={data}/>
-       :null
-     }
-    <input type="text" onChange={getData} />
-    <button onClick={()=>setPrint(true)} >Print Data</button>
+       :null 
+    }
+
     </div>
   );
 }
-
 
 export default App;
 
