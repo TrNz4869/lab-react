@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
 import WordCard from './WordCard';
-import ScrollButton from './ScrollButton'; 
+import ScrollButtom from './ScrollButtom'; 
+import ScrollTop from './ScrollTop'; 
+
 function App() {
   const [data,setData]=useState(null)
   const [print,setPrint]=useState(false)
@@ -26,8 +28,8 @@ function App() {
         <input type="text" placeholder="Type your word here!" onChange={getData}/>&nbsp;&nbsp;
         <button className="button" onClick={()=>setPrint(true)}>Enter</button>&nbsp;&nbsp;
       </div>
-      <ScrollButton /> 
-      <div className="frame-2">
+      <ScrollButtom /> 
+      <div className="frame-2">   
       <b>Cards Section</b><br></br>
         {
           print?
@@ -35,6 +37,7 @@ function App() {
           :null 
         }
       </div>
+      <ScrollTop />&nbsp;&nbsp;
       <button className="button-2" onClick={restartGame}>Restart</button>
     </div>
   );
