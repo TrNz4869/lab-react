@@ -30,7 +30,7 @@ function App() {
       </div>
       <ScrollButtom /> 
       <div className="frame-2">   
-      <b>Cards Section</b><br></br>
+      <h3>Cards Section</h3>
         {
           print?
           <WordCard value={data}/>
