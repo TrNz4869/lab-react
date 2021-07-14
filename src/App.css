@@ -93,6 +93,21 @@
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   font-size: 16px;
+  margin-bottom:150px;
+}
+
+.button-3 {
+  background-color: #f39237;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 16px;
+  margin-bottom:150px;
 }
 
 .frame {
@@ -106,10 +121,10 @@
 
  .frame-2 {
   background-color: #fdf5b0;
-  margin-top:10px;
+  margin-top:280px;
   margin-left:50px;
   margin-right:50px;
-  margin-bottom:10px;
+  margin-bottom:30px;
   border-radius: 10px;
  }
  

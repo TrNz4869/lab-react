@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import WordCard from './WordCard';
+import ScrollButton from './ScrollButton'; 
 function App() {
   const [data,setData]=useState(null)
   const [print,setPrint]=useState(false)
@@ -24,8 +25,10 @@ function App() {
         <p>2. Choose cards to make the correct word</p>
         <input type="text" placeholder="Type your word here!" onChange={getData}/>&nbsp;&nbsp;
         <button className="button" onClick={()=>setPrint(true)}>Enter</button>&nbsp;&nbsp;
-      </div>  
+      </div>
+      <ScrollButton /> 
       <div className="frame-2">
+      <b>Cards Section</b><br></br>
         {
           print?
           <WordCard value={data}/>
